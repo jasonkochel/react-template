@@ -1,0 +1,25 @@
+.list {
+  & > * {
+    height: 45px;
+    padding: 10px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-color: var(--mantine-colors-gray-3);
+
+    &:hover {
+      background-color: var(--mantine-color-gray-1);
+    }
+
+    &:nth-of-type(1) {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &:nth-last-of-type(1) {
+      border-bottom-width: 1px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
